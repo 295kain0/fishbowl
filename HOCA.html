@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hồ Cá</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="menu">
+
+        <label for="fish-select">
+          <span>Cá:</span>
+          <select id="fish-select">
+            <option >None</option>
+            <option value="Picture/Fish1.gif">Cá 1</option>
+            <option value="Picture/Fish2.gif">Cá 2</option>
+            <option value="Picture/Fish3.gif">Cá 3</option>
+            <option value="Picture/Fish4.gif">Cá 4</option>
+            <option value="Picture/Fish5.gif">Cá 5</option>
+            <option value="Picture/Fish7.gif">Cá 6</option>
+            <option value="Picture/Fish8.gif">Cá 7</option>
+          </select>
+          <button id="add-fish-btn">Thêm</button>
+        </label>
+        <label for="rong-select">
+          <span>Rong:</span>
+          <select id="rong-select">
+            <option >None</option>
+            <option value="Picture/rong1.gif">Rong 1</option>
+            <option value="Picture/rong2.gif">Rong 1</option>
+            <option value="Picture/rong3.gif">Rong 2</option>
+            <option value="Picture/rong4.gif">Rong 3</option>
+            <option value="Picture/rong5.gif">Rong 4</option>
+            <option value="Picture/rong6.gif">Rong 5</option>
+            <option value="Picture/rong7.gif">Rong 6</option>
+            <option value="Picture/rong8.gif">Rong 7</option>
+            <option value="Picture/rong9.gif">Rong 8</option>
+            <option value="Picture/rong9.png">Rong 9</option>
+            <option value="Picture/rong10.png">Rong 10</option>
+            <option value="Picture/rong11.png">Rong 11</option>
+            <option value="Picture/rong12.png">Rong 12</option>
+            <option value="Picture/Sanho.gif" >Rong 9</option>
+          </select>
+          <button id="add-rong-btn">Thêm</button>
+        </label>
+        <label for="animation-select">
+            <span>Di chuyển:</span>
+            <select id="animation-select">
+            <option value="none">None</option>
+            <option value="swim-left">1</option>
+            <option value="swim-right">2</option>
+            <option value="flit">3</option>
+          </select>
+        </label>
+    </nav>
+
+    <section>
+        <div id="ripple"></div>
+        <div id="rong"></div>
+    </section>
+    <footer>
+        <marquee direction="left">Web hồ cá cho phép người dùng thêm và random các rong rêu tùy ý, </marquee>
+    </footer>
+    <!-- Thư viên tạo độ dao động cho nước -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

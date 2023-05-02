@@ -1,0 +1,229 @@
+html,
+body {
+    height: 100%;
+}
+
+footer {
+    height: 5%;
+    background-color: #144380;
+    font-size: 40px;
+    color: white;
+}
+
+button {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    height: 5%;
+    display: flex;
+    background-color: #144380;
+    justify-content: space-around;
+    align-items: center;
+}
+
+select {
+    font-weight: bold;
+    font-size: 31px;
+    margin-right: 5px;
+}
+
+label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-size: 30px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+/* Định nghĩa class để quay đầu con cá */
+
+.flip {
+    transform: scaleX(-1);
+}
+
+
+/* css bọt biển */
+
+#ripple {
+    position: absolute;
+    height: 100rem;
+    width: 100%;
+    bottom: 5px;
+    overflow: hidden;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    /* background: linear-gradient(to bottom, #ffffff 5%, rgb(14, 118, 230) 92%, rgb(116, 85, 27) 2%); */
+    background-image: linear-gradient(to bottom, #c0d4de 10%, rgb(94, 169, 222) 86%);
+    margin: auto;
+}
+
+section span {
+    position: absolute;
+    bottom: 0%;
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(63, 80, 91, 0.5);
+    animation: animate 4s linear infinite;
+}
+
+section span:before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    transform: scale(0.2)translate(-70%, 70%);
+    background: radial-gradient(#f2f3f4, transparent);
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-2000%);
+        opacity: 1;
+    }
+}
+
+.fish {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+}
+
+.small-fish {
+    width: 8%;
+    height: 8%;
+}
+
+.medium-fish {
+    width: 8%;
+    height: 8%;
+}
+
+.large-fish {
+    width: 12%;
+    height: 12%;
+}
+
+.giant-fish {
+    width: 5%;
+    height: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        font-size: 21px;
+    }
+    select,
+    button,
+    footer {
+        font-size: 20px;
+    }
+}
+
+
+/* Media query cho các thiết bị có độ rộng màn hình lớn hơn 1024px */
+
+@media only screen and (max-width: 500px) {
+    nav {
+        font-size: 10px;
+    }
+    span,
+    select,
+    button {
+        font-size: 8px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
+
+
+/* .swim-left {
+    animation: swim-left 50s linear infinite;
+}
+
+.swim-right {
+    animation: swim-right 10s linear infinite;
+}
+
+.flip {
+    animation: flip 10s linear infinite;
+}
+
+@keyframes swim-left {
+    0% {
+        left: 50%;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 50%;
+        transform: scaleX(1);
+    }
+    20% {
+        left: 20%;
+        transform: scaleX(1);
+    }
+    40% {
+        left: 80%;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 20%;
+        transform: scaleX(1);
+    }
+    51% {
+        left: 10%;
+        transform: scaleX(-1);
+    }
+    60% {
+        left: 30%;
+        transform: scaleX(-1);
+    }
+    80% {
+        left: 70%;
+        transform: scaleX(-1);
+    }
+    90% {
+        left: 90%;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 100%;
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes swim-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+} */
